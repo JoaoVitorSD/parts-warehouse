@@ -6,11 +6,14 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "warehouse_parts")
 @Getter
 @Setter
-public class Part {
+public class Part implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     private String id;
 
