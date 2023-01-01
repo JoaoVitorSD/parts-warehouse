@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/part/")
 public class PartService {
@@ -17,7 +19,7 @@ public class PartService {
 
     @ResponseStatus(HttpStatus.ACCEPTED)
     @GetMapping("get/")
-    public Part get(){
-        return new Part("RE541922","ELEMENTO DO FILTRO",100,11,1);
+    public List<Part> get(){
+        return partRepository.findAll();
     }
 }
