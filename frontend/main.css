@@ -10,19 +10,24 @@ body{
     display: flex;
     margin-top: 10%;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 70vw;
+    width: 50vw;
+    height: 40vh;
+    border: 1px solid #ccc;
 }
 .form-field{
     margin-top: 20px;
     display: flex;
-    width: 33%;
+    width: 35%;
+    margin-right: 40px;
 }
 .form-label::after {
     content: ":";
 }
 
 .form-input{
+    width: 100%;
     border: none;
     border-bottom: 1px solid black;
 }
