@@ -4,6 +4,7 @@
 }
 html{
     background: #0e3b43;
+    background: #fff;
 }
 body{
     display: flex;
@@ -43,6 +44,7 @@ body{
     width: 100%;
     border: none;
     background: none;
+    outline: none;
     border-bottom: 1px solid black;
 }
 
