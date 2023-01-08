@@ -21,9 +21,15 @@ public class PartService {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping("insert")
+    @PostMapping("/insert")
     public Part insert(@RequestBody Part part){
         partRepository.save(part);
         return part;
+    }
+
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    @GetMapping("/getAll")
+    public List<Part> getAll(){
+        return partRepository.findAll();
     }
 }
