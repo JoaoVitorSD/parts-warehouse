@@ -16,7 +16,7 @@ public class Seeder implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         for (int i = 0; i < 10; i++) {
-            partRepository.save(new Part("RE324DC"+i,"SENSOR",100,100,11));
+            partRepository.save(new Part("RE324DC"+i,"SENSOR",RandomGenerator.randomInt(100),RandomGenerator.randomInt( 100),RandomGenerator.randomInt(13)));
         }
     }
 }
