@@ -18,7 +18,6 @@ class Part {
         this.setAttributes();
         return JSON.stringify(
             {
-                id: this.id,
                 description: this.description,
                 warehouse: this.warehouse,
                 numberLocal: this.numberLocal,

@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/part/")
+@CrossOrigin
 public class PartService {
     @Autowired
     private PartRepository partRepository;
